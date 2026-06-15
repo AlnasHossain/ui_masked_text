@@ -26,12 +26,12 @@ Import the package and drop the `MaskedText` widget anywhere you'd normally use 
 import 'package:ui_masked_text/ui_masked_text.dart';
 
 // 1. User Name (Preserves first name and first letter of last name)
-MaskedText('Alnas Smith', maskType: MaskType.name) 
-// Renders: Alnas S••••
+MaskedText('Joe Smith', maskType: MaskType.name) 
+// Renders: Joe S••••
 
 // 2. Email (Keeps the first 2 letters and the domain intact)
-MaskedText('alnas@smcfinance.com', maskType: MaskType.email) 
-// Renders: al***@smcfinance.com
+MaskedText('donjohn@smcfinance.com', maskType: MaskType.email) 
+// Renders: do*****@smcfinance.com
 
 // 3. Phone Number (Shows only the last 4 digits)
 MaskedText('+91 98765 43210', maskType: MaskType.phone) 
@@ -70,7 +70,7 @@ MaskedText(
 
 // Use a completely custom rule for internal/custom IDs
 MaskedText(
-  'SMC-FIN-998822',
+  'ABC-FIN-998822',
   maskType: MaskType.custom,
   customMasker: (String input) {
     if (input.length > 8) {

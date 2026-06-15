@@ -1,3 +1,8 @@
+## 0.0.2
+
+* Updated repository and issue tracker links in `pubspec.yaml` to point to the correct GitHub repository.
+
+
 ## 0.0.1
 
 * Initial release of `ui_masked_text`.

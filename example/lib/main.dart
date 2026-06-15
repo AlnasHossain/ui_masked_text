@@ -49,7 +49,7 @@ class MaskedTextDemoScreen extends StatelessWidget {
             _buildDemoCard(
               label: 'User Name',
               child: const MaskedText(
-                'Alnas Smith',
+                'Joe Smith',
                 maskType: MaskType.name,
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
               ),
@@ -58,7 +58,7 @@ class MaskedTextDemoScreen extends StatelessWidget {
             _buildDemoCard(
               label: 'Client Email',
               child: const MaskedText(
-                'alnas@smcfinance.com',
+                'donjohn@smcfinance.com',
                 maskType: MaskType.email,
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
               ),
@@ -135,7 +135,7 @@ class MaskedTextDemoScreen extends StatelessWidget {
             _buildDemoCard(
               label: 'Custom Logic Rule (Internal ID Syntax)',
               child: MaskedText(
-                'SMC-FIN-998822',
+                'ABC-FIN-998822',
                 maskType: MaskType.custom,
                 customMasker: (input) {
                   if (input.length > 8) {
