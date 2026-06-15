@@ -1,6 +1,6 @@
 name: ui_masked_text
 description: A declarative Flutter UI widget to safely mask and obfuscate sensitive read-only data (emails, phones, credit cards) preventing shoulder-surfing.
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/AlnasHossain/ui_masked_text
 repository: https://github.com/AlnasHossain/ui_masked_text
 issue_tracker: https://github.com/AlnasHossain/ui_masked_text/issues

@@ -1,3 +1,7 @@
+## 0.0.3
+
+* Updated example names across files for demo.
+
 ## 0.0.2
 
 * Updated repository and issue tracker links in `pubspec.yaml` to point to the correct GitHub repository.

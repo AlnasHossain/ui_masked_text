@@ -30,8 +30,8 @@ MaskedText('Joe Smith', maskType: MaskType.name)
 // Renders: Joe S••••
 
 // 2. Email (Keeps the first 2 letters and the domain intact)
-MaskedText('donjohn@smcfinance.com', maskType: MaskType.email) 
-// Renders: do*****@smcfinance.com
+MaskedText('donjohn@gmail.com', maskType: MaskType.email) 
+// Renders: do*****@gmail.com
 
 // 3. Phone Number (Shows only the last 4 digits)
 MaskedText('+91 98765 43210', maskType: MaskType.phone) 

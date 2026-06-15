@@ -58,7 +58,7 @@ class MaskedTextDemoScreen extends StatelessWidget {
             _buildDemoCard(
               label: 'Client Email',
               child: const MaskedText(
-                'donjohn@smcfinance.com',
+                'donjohn@gmail.com',
                 maskType: MaskType.email,
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
               ),

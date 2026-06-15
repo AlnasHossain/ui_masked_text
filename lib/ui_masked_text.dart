@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// Defines the supported types of data masking.
 enum MaskType {
   /// Masks an email address, preserving the first two characters and the domain.
-  /// Example: `alnas@smcfinance.com` -> `al***@smcfinance.com`
+  /// Example: `donjohn@gmail.com` -> `do*****@gmail.com`
   email,
 
   /// Masks a phone number, preserving only the last few digits.
@@ -32,7 +32,7 @@ enum MaskType {
 
   /// Masks a person's name. Preserves the first name and the first letter
   /// of the last name, masking the rest.
-  /// Example: `Alnas Smith` -> `Alnas S••••`
+  /// Example: `Joe Smith` -> `Joe S••••`
   name,
 
   /// Allows for a custom masking logic via the [customMasker] callback.
@@ -202,7 +202,7 @@ class MaskedText extends StatelessWidget {
 
     if (parts.isEmpty || cleanName.isEmpty) return name;
 
-    // Handle single-word names (e.g., just "Alnas")
+    // Handle single-word names (e.g., just "John")
     if (parts.length == 1) {
       if (cleanName.length <= 2) return cleanName;
       final visible = cleanName.substring(0, 2);
